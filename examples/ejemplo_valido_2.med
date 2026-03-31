@@ -1,0 +1,17 @@
+HOSPITAL {
+PACIENTES {
+paciente: "Sofia Ramirez" [edad: 29, tipo_sangre: "B+", habitacion: 215],
+paciente: "Pedro Castillo" [edad: 71, tipo_sangre: "AB-", habitacion: 118],
+};
+MEDICOS {
+medico: "Dr. Luis Herrera" [especialidad: PEDIATRIA, codigo: "MED-003"],
+medico: "Dra. Carmen Vega" [especialidad: CIRUGIA, codigo: "MED-004"],
+};
+CITAS {
+cita: "Sofia Ramirez" con "Dr. Luis Herrera" [fecha: 2025-04-11, hora: 08:00],
+cita: "Pedro Castillo" con "Dra. Carmen Vega" [fecha: 2025-04-12, hora: 14:30],
+};
+DIAGNOSTICOS {
+diagnostico: "Pedro Castillo" [condicion: "Insuficiencia Cardiaca", medicamento: "Furosemida 40mg", dosis: DIARIA],
+};
+};

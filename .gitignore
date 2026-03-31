@@ -1,0 +1,29 @@
+# Build folders
+build/
+cmake-build-*/
+
+# Qt generated files
+*.pro.user
+*.pro.user.*
+*.qbs.user
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+
+# Compiled objects and binaries
+*.obj
+*.o
+*.a
+*.lib
+*.dll
+*.exe
+*.pdb
+
+# Logs and temporary files
+*.log
+*.tmp
+*.cache
+
+# VS Code / IDE
+.vscode/
+.idea/
