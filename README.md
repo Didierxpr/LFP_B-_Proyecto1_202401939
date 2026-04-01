@@ -20,20 +20,3 @@ Aplicacion de escritorio en C++17 con Qt y CMake para analisis lexico del lengua
 ```powershell
 cmake -S . -B build
 cmake --build build
-```
-
-## Ejecucion
-
-```powershell
-./build/MedLexer.exe
-```
-
-## Estado actual (Parte 1)
-
-- Estructura base del proyecto creada.
-- Integracion inicial Qt + CMake configurada.
-- Clases base del analizador declaradas.
-- Diseno del AFD documentado en `docs/AFD_MedLang.md`.
-- Casos de prueba preliminares en `tests/casos_prueba.md`.
-
-Las siguientes partes implementaran el AFD completo en `LexicalAnalyzer::nextToken()`, recuperacion de errores, GUI completa y reportes HTML/DOT.
