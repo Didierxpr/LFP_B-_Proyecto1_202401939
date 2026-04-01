@@ -14,6 +14,10 @@ class MainWindow : public QMainWindow {
 public:
     explicit MainWindow(QWidget *parent = nullptr);
 
+    private slots:
+    void onAnalyzeClicked();
+    void onLoadClicked();
+
 private:
     void setupUi();
 
@@ -24,5 +28,7 @@ private:
     QPushButton *analyzeButton_;
     QLabel *statusLabel_;
 };
+
+
 
 #endif
