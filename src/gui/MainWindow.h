@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "../core/MedLangParser.h"
 
 class QTextEdit;
 class QTableWidget;
@@ -24,6 +25,9 @@ private:
     QTextEdit *sourceEditor_;
     QTableWidget *tokensTable_;
     QTableWidget *errorsTable_;
+    QTableWidget *patientsTable_;
+    QTableWidget *doctorsTable_;
+    QTableWidget *appointmentsTable_;
     QPushButton *loadButton_;
     QPushButton *analyzeButton_;
     QLabel *statusLabel_;

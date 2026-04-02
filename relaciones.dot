@@ -1,0 +1,26 @@
+digraph Hospital {
+    rankdir=LR;
+    node [shape=box, style=rounded, color=lightblue, fontname=Arial];
+    edge [fontname=Arial];
+
+    Hospital [label="Hospital", color=lightgreen, style="rounded,filled"];
+
+    // Pacientes
+    "Patient_1" [label="Sofia Ramirez\nEdad: 29\nB+", color=lightyellow];
+    Hospital -> "Patient_1" [label="Paciente"];
+    "Patient_2" [label="Pedro Castillo\nEdad: 71\nAB-", color=lightyellow];
+    Hospital -> "Patient_2" [label="Paciente"];
+
+    // Doctores
+    "Doctor_1" [label="Dr. Luis Herrera\nPEDIATRIA", color=lightcoral];
+    "Doctor_2" [label="Dra. Carmen Vega\nCIRUGIA", color=lightcoral];
+
+    // Citas
+    "Appointment_1" [label="Cita 1\nFecha: 2025-04-11\nHora: 08:00", color=lavender];
+    "Patient_1" -> "Appointment_1" [label="Tiene"];
+    "Appointment_1" -> "Doctor_1" [label="Con"];
+    "Appointment_2" [label="Cita 2\nFecha: 2025-04-12\nHora: 14:30", color=lavender];
+    "Patient_2" -> "Appointment_2" [label="Tiene"];
+    "Appointment_2" -> "Doctor_2" [label="Con"];
+
+}
